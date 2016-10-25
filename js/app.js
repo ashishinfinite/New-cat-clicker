@@ -2,7 +2,6 @@ var model=function(){
  
  this.currentCat=ko.observable(new Cat());
    
-  
 }
 
 var Cat=function(){
