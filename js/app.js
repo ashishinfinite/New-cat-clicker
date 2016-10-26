@@ -1,23 +1,7 @@
 var model=function(){
  
  this.currentCat=ko.observable(new Cat());
-   
-}
-
-var Cat=function(){
-
-	this.name=ko.observable("pussy_cat");
-	this.imgsrc=ko.observable("img/a.jpg");
-	this.clickCount=ko.observable(0);
-	this.status=ko.observable("newly_borned");
-	this.names=ko.observableArray([{values:"ashish"},
-            {values:"ddd"}]);
-}
-
-
-
-
-
+ 
 this.incrementCounter=function(){
 
 	 this.currentCat().clickCount(this.currentCat().clickCount()+1);
@@ -35,5 +19,22 @@ this.incrementCounter=function(){
 	 
     
 }
+   
+}
+
+var Cat=function(){
+
+	this.name=ko.observable("pussy_cat");
+	this.imgsrc=ko.observable("img/a.jpg");
+	this.clickCount=ko.observable(0);
+	this.status=ko.observable("newly_borned");
+	this.names=ko.observableArray([{values:"ashish"},
+            {values:"ddd"}]);
+}
+
+
+
+
+
 
 ko.applyBindings(new model());

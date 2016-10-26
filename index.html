@@ -15,7 +15,7 @@
         data-bind="click:incrementCounter,attr:{src:currentCat().imgsrc}">
         <h3>NickNames </h3>
         <ul data-bind="foreach:currentCat().names">
-        <li data-bind="text:values"></li>
+        <li data-bind="text:currentCat().values"></li>
         </ul>
 
     </div>
