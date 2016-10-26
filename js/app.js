@@ -20,17 +20,17 @@ var Cat=function(){
 
 this.incrementCounter=function(){
 
-	 this.currentCat().clickCount(this.currentCat().clickCount()+1);
-	 if (this.currentCat().clickCount()>5){
-	 	this.currentCat().status("Now became infant");
+	 this.clickCount(this.clickCount()+1);
+	 if (this.clickCount()>5){
+	 	this.status("Now became infant");
 	 }
 
-	  if (this.currentCat().clickCount()>10){
-	 	this.currentCat().status("Now became Child");
+	  if (this.clickCount()>10){
+	 	this.status("Now became Child");
 	 }
 
-	  if (this.currentCat().clickCount()>15){
-	 	this.currentCat().status("Now became Adult");
+	  if (this.clickCount()>15){
+	 	this.status("Now became Adult");
 	 }
 	 
     
